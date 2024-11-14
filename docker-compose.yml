@@ -74,6 +74,7 @@ services:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro,Z
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro,Z
     ports:
+      - 24224:24224/udp
       - 5044:5044
       - 50000:50000/tcp
       - 50000:50000/udp
